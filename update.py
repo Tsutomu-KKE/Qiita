@@ -1,7 +1,4 @@
-import urllib2
-import json
-import os
-import re
+import os, re, jdon, urllib2
 
 user = 'Tsutomu-KKE@github'
 
