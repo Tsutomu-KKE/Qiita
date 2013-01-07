@@ -3,13 +3,14 @@ import json
 import os
 import re
 
+user = 'Tsutomu-KKE@github'
+
 def getweb(url):
 	fp = urllib2.urlopen(url)
 	s = fp.read()
 	fp.close()
 	return json.loads(s)
 
-user = 'Tsutomu-KKE@github'
 fr = open('README.md', 'w')
 fr.write('Posts on Qiita\n=====\n\n')
 for i in xrange(1, 100):
